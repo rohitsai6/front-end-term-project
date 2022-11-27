@@ -10,6 +10,7 @@
   --blue-300: hsl(211, 53%, 70%);
   --blue-200: hsl(211, 53%, 80%);
   --blue-100: hsl(211, 53%, 90%);
+  --blue-50: hsl(211, 53%, 95%);
   --black-900: #212529;
   --black-800: #343a40;
   --black-700: #495057;
@@ -21,6 +22,7 @@
   --black-100: #f8f9fa;
   --white: #fff;
   --black: #000;
+  color: var(--black-900);
 }
 
 *,
@@ -58,10 +60,57 @@ header {
   display: flex;
   gap: 0.25rem;
 }
+.grid {
+  display: grid;
+}
+.gap-1 {
+  gap: 4px;
+}
+.gap-2 {
+  gap: 8px;
+}
+.gap-3 {
+  gap: 12px;
+}
+.gap-4 {
+  gap: 16px;
+}
+.gap-6 {
+  gap: 20px;
+}
+.gap-8 {
+  gap: 20px;
+}
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.justify-start {
+  justify-content: flex-start;
+}
 .hero {
   position: relative;
   margin: auto;
   width: 100%;
+}
+
+.required::after {
+  content: "*";
+  margin-left: 4px;
+  color: red;
+  font-size: 18px;
+  padding-top: 2px;
 }
 
 .hero-image {
@@ -167,6 +216,13 @@ footer {
   height: 4rem;
   color: var(--black-100);
 }
+
+.landing footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 footer > * {
   color: var(--black-100);
 }
@@ -195,7 +251,7 @@ footer > * {
     height: calc(100vh - 10rem);
   }
   .hero-image img {
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 10rem);
   }
   nav {
     margin-left: auto;

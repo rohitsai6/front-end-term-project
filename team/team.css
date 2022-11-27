@@ -4,7 +4,8 @@
   text-align: center;
 }
 
-.team-hero-text h2 {
+.team-hero-text > h2,
+.our-team-section > h2 {
   font-size: 1.4rem;
   margin-block-start: 10px;
   margin-block-end: 20px;
@@ -20,6 +21,11 @@
   letter-spacing: 0.5px;
   padding: 0 2rem;
   margin-block: 1rem 2rem;
+}
+.our-team-section > p {
+  padding: 0 2rem;
+  margin-block: 1rem 2rem;
+  margin: 0 auto;
 }
 
 .team-hero-text {
@@ -52,7 +58,9 @@
 
 .our-team-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
 .member-card {
@@ -110,9 +118,10 @@
 
 @media screen and (min-width: 768px) {
   .our-team-cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
-  .team-hero-text::before {
+  .team-hero-text::before,
+  .our-team-section::before {
     height: 40%;
     top: 40%;
     transform: rotateZ(5deg);
@@ -121,22 +130,24 @@
     max-width: 70%;
   }
 
-  .team-hero-text h2 {
+  .team-hero-text h2,
+  .our-team-section h2 {
     font-size: 2rem;
   }
-  .team-hero-text p {
+  .team-hero-text p,
+  .our-team-section > p {
     letter-spacing: 1px;
     font-size: 1.2rem;
   }
   .member-card {
-    max-width: 30rem;
+    max-width: 18rem;
     flex-direction: row;
     gap: 1rem;
     justify-content: flex-start;
   }
   .member-card .member-img {
-    width: 7rem;
-    height: 7rem;
+    width: 8rem;
+    height: 8rem;
   }
   .member-card .member-info {
     margin: auto;
