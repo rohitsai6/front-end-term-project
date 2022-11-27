@@ -188,7 +188,7 @@ footer > * {
     display: none;
   }
   .logo {
-    width: 6rem;
+    width: 11rem;
   }
   header {
     height: 4rem;
@@ -277,4 +277,34 @@ footer > * {
   .about-container:nth-child(2) {
     flex-direction: row;
   }
+}
+
+/* reset styles */
+table,
+thead,
+tbody,
+th,
+td {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* style for table element */
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+/*main content table*/
+th,
+td {
+  border: solid 1px #000000;
+  padding: 0.5em;
+}
+
+th {
+  background-color: yellow;
+}
+tr:hover {
+  background-color: coral;
 }

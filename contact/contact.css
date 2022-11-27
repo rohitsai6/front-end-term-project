@@ -61,7 +61,7 @@ header {
 .hero {
   position: relative;
   margin: auto;
-  width: 100%;
+  width: 75%;
 }
 
 .hero-image {
@@ -188,7 +188,7 @@ footer > * {
     display: none;
   }
   .logo {
-    width: 6rem;
+    width: 5rem;
   }
   header {
     height: 4rem;
@@ -277,4 +277,39 @@ footer > * {
   .about-container:nth-child(2) {
     flex-direction: row;
   }
+}
+
+/* Style
+rule for input, select,
+and textarea form
+elements */
+input,
+select,
+textarea {
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* Style
+rule for label element
+*/
+label {
+  display: block;
+}
+
+/* Style
+rule for unordered list
+within a form */
+form ul {
+  list-style-type: none;
+}
+
+/* Style
+rule for chkbx class */
+.chkbx {
+  display: inline-block;
+}
+
+fieldset {
+  padding: 28px;
 }

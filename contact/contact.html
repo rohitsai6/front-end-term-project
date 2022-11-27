@@ -1,0 +1,128 @@
+<!DOCTYPE html5>
+<!-- This website was created by Pandugolla Rohit Sai -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!--adding style sheet to the website-->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Mahadev Enterprises</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- The header is the area for the website name or logo -->
+      <header>
+        <div class="header-content">
+          <img
+            class="logo"
+            src="../images/mahadev-enterprises-high-resolution-logo-color-on-transparent-background.png"
+            alt="Mahadev Enterprises Logo"
+          />
+          <div class="separator"></div>
+          <!-- The nav area is for hyperlinks to other pages within the same website -->
+          <nav>
+            <ul>
+              <li><a class="selected" href="../index.html">Home</a></li>
+              <li><a href="about/about.html">About Us</a></li>
+              <li><a href="team/team.html">Our Team</a></li>
+              <li><a href="specials/specials.html">Specials</a></li>
+              <li><a href="training/training.html">Training</a></li>
+              <li><a href="media/media.html">Media</a></li>
+              <li><a href="contact/contact.html">Contact Us</a></li>
+              <li>
+                <select name="sample">
+                  <option>Reports</option>
+                  <option value="Report_1.html">Report_1</option>
+                  <option value="Report_2.html">Report_2</option>
+                  <option value="Report_3.html">Report_3</option>
+                  <option value="Report_4.html">Report_4</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- The body of the content for a particular page, in this case the home page -->
+      <main class="hero">
+        <h2>Talk to us.</h2>
+        <!-- Start Form -->
+        <form>
+          <fieldset>
+            <legend>Complete the form below</legend>
+            <label for="fName">First Name:</label>
+            <input type="text" name="fName" id="fName" />
+            <label for="lName">Last Name:</label>
+            <input type="text" name="lName" id="lName" />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone" />
+            <p>I would like more information about:</p>
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="grpfit"
+                  id="grpfit"
+                  value="grpfit"
+                  class="chkbx"
+                />Products
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="prtrain"
+                  id="prtrain"
+                  value="prtrain"
+                  class="chkbx"
+                />Services
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="nutr"
+                  id="nutr"
+                  value="nutr"
+                  class="chkbx"
+                />Other
+              </li>
+            </ul>
+            <label for="reference">Referral Source:</label>
+            <select name="reference" id="reference">
+              <option value="ad">Advertisement</option>
+              <option value="friend">Friend</option>
+              <option value="google">Google</option>
+              <option value="social">Social Media</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="questions"> Questions?</label>
+            <textarea
+              id="questions"
+              name="questions"
+              rows="3"
+              cols="25"
+            ></textarea>
+            <input type="submit" id="submit" value="Submit" class="btn" />
+            <input type="reset" id="reset" value="Reset Form" class="btn" />
+          </fieldset>
+        </form>
+      </main>
+
+      <!-- The footer contains copyright and contact info regarding the website -->
+      <footer>
+        &copy; Copyright 2099. All Rights Reserved.<br />
+        <a href="mailto:info@mahadev-enterprises.com"> Request Information </a>
+        Rohit Sai Pandugolla &nbsp;&nbsp; C0878560
+        <!--Hyperlinks for social media handles can be added-->
+      </footer>
+    </div>
+  </body>
+</html>
