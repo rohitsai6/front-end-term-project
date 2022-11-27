@@ -187,9 +187,6 @@ footer > * {
   .mobile {
     display: none;
   }
-  .logo {
-    width: 5rem;
-  }
   header {
     height: 4rem;
     flex-direction: row;
