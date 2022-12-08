@@ -118,7 +118,7 @@
 
 @media screen and (min-width: 768px) {
   .our-team-cards {
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   }
   .team-hero-text::before,
   .our-team-section::before {
