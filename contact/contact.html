@@ -58,7 +58,14 @@
           <div class="grid inputs gap-8">
             <fieldset class="field-container">
               <legend class="required">First Name</legend>
-              <input type="text" placeholder="John" class="input-field" />
+              <input
+                size="20"
+                autofocus
+                type="text"
+                required
+                placeholder="John"
+                class="input-field"
+              />
             </fieldset>
             <fieldset class="field-container">
               <legend class="required">Last Name</legend>
@@ -80,23 +87,27 @@
                 class="input-field"
               />
             </fieldset>
+            <fieldset class="field-container">
+              <legend>Date of Birth</legend>
+              <input type="date" class="input-field" />
+            </fieldset>
+            <section class="options-container">
+              <span>Gender : </span>
+              <section class="options flex-row">
+                <span class="option">
+                  <input type="radio" name="gender" id="male" />
+                  <label for="male">Male</label>
+                </span>
+                <span class="option">
+                  <input type="radio" name="gender" id="female" />
+                  <label for="female">Female</label>
+                </span>
+              </section>
+            </section>
           </div>
           <section class="options-container">
-            <span>Gender</span>
-            <section class="options flex-row">
-              <span class="option">
-                <input type="radio" name="gender" id="male" />
-                <label for="male">Male</label>
-              </span>
-              <span class="option">
-                <input type="radio" name="gender" id="female" />
-                <label for="female">Female</label>
-              </span>
-            </section>
-          </section>
-          <section class="options-container flex-col">
-            <span>Get Notified about</span>
-            <section class="col-options flex flex-col justify-start">
+            <span class="text-sm">Get Notified about</span>
+            <section class="col-options flex justify-start">
               <span class="option">
                 <input type="checkbox" name="gender" id="new" />
                 <label for="new">New Products</label>
@@ -111,33 +122,52 @@
               </span>
             </section>
           </section>
-          <label for="reference">Referral Source:</label>
           <select name="reference" id="reference">
+            <caption>
+              Hello
+            </caption>
+            <option value="ad" selected>Referral Source</option>
             <option value="ad">Advertisement</option>
             <option value="friend">Friend</option>
             <option value="google">Google</option>
             <option value="social">Social Media</option>
             <option value="other">Other</option>
           </select>
-          <label for="questions"> Questions?</label>
           <textarea
             id="questions"
             name="questions"
-            rows="3"
-            cols="25"
+            draggable="false"
+            class="queries-input"
+            rows="5"
+            placeholder="Shoot your queries"
+            cols="30"
           ></textarea>
-          <input type="submit" id="submit" value="Submit" class="btn" />
-          <input type="reset" id="reset" value="Reset Form" class="btn" />
+          <div class="contacts-btns">
+            <input
+              type="submit"
+              id="submit"
+              value="Submit"
+              class="btn btn-primary"
+            />
+            <input
+              type="reset"
+              id="reset"
+              value="Reset Form"
+              class="btn btn-secondary"
+            />
+          </div>
         </form>
+        <footer>
+          &copy; Copyright 2099. All Rights Reserved.<br />
+          <a href="mailto:info@mahadev-enterprises.com">
+            Request Information
+          </a>
+          Rohit Sai Pandugolla &nbsp;&nbsp; C0878560
+          <!--Hyperlinks for social media handles can be added-->
+        </footer>
       </main>
 
       <!-- The footer contains copyright and contact info regarding the website -->
-      <footer>
-        &copy; Copyright 2099. All Rights Reserved.<br />
-        <a href="mailto:info@mahadev-enterprises.com"> Request Information </a>
-        Rohit Sai Pandugolla &nbsp;&nbsp; C0878560
-        <!--Hyperlinks for social media handles can be added-->
-      </footer>
     </div>
   </body>
 </html>
