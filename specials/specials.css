@@ -1,0 +1,31 @@
+@import url("../css/style.css");
+
+.stats {
+  border-style: double;
+  padding: 5px 8px;
+}
+
+.stats-container {
+  width: 97%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.specials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 10px;
+}
+
+.stats-value {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 4rem;
+}
+
+.stats-heading {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}

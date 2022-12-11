@@ -5,53 +5,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <!--adding style sheet to the website-->
-    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="specials.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/mahadev-enterprises-high-resolution-logo-color-on-transparent-background.png"
+    />
     <title>Mahadev Enterprises</title>
   </head>
   <body>
-    <div id="container">
+    <div id="container" class="landing">
       <!-- The header is the area for the website name or logo -->
       <header>
-        <img
-          class="logo"
-          src="/images/mahadev-enterprises-logo.png"
-          alt="Mahadev Enterprises Logo"
-        />
-
-        <!-- The nav area is for hyperlinks to other pages within the same website -->
-        <nav>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about/about.html">About Us</a></li>
-            <li><a href="../team/team.html">Our Team</a></li>
-            <li><a class="selected" href="#">Specials</a></li>
-            <li><a href="../training/training.html">Training</a></li>
-            <li><a href="../media/media.html">Media</a></li>
-            <li><a href="../contact/contact.html">Contact Us</a></li>
-            <li>
-              <select name="sample">
-                <option>Reports</option>
-                <option value="Report_1.html">Report_1</option>
-                <option value="Report_2.html">Report_2</option>
-                <option value="Report_3.html">Report_3</option>
-                <option value="Report_4.html">Report_4</option>
-              </select>
-            </li>
-          </ul>
-        </nav>
+        <div class="header-content">
+          <img
+            class="logo"
+            src="../images/mahadev-enterprises-high-resolution-logo-color-on-transparent-background.png"
+            alt="Mahadev Enterprises Logo"
+          />
+          <div class="separator"></div>
+          <!-- The nav area is for hyperlinks to other pages within the same website -->
+          <nav>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about/about.html">About Us</a></li>
+              <li><a href="/team/team.html">Our Team</a></li>
+              <li><a class="selected" href="#">Specials</a></li>
+              <li><a href="/training/training.html">Training</a></li>
+              <li><a href="/media/media.html">Media</a></li>
+              <li><a href="/contact/contact.html">Contact Us</a></li>
+              <li>
+                <select name="sample">
+                  <option>Reports</option>
+                  <option value="Report_1.html">Report_1</option>
+                  <option value="Report_2.html">Report_2</option>
+                  <option value="Report_3.html">Report_3</option>
+                  <option value="Report_4.html">Report_4</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <!-- The body of the content for a particular page, in this case the home page -->
-      <main>
-        <h2>Product of the week</h2>
+      <main class="hero">
+        <div class="specials-container">
+          <div class="stats-container">
+            <div class="stats">
+              <h1 class="stats-heading">Ranking in Country</h1>
+              <h2 class="stats-value">#7</h2>
+            </div>
+            <div class="stats">
+              <h1 class="stats-heading">Ranking in the state</h1>
+              <h2 class="stats-value">#2</h2>
+            </div>
+            <div class="stats">
+              <h1 class="stats-heading">On-site employees</h1>
+              <h2 class="stats-value">25,000</h2>
+            </div>
+            <div class="stats">
+              <h1 class="stats-heading">Fortune 500 clients</h1>
+              <h2 class="stats-value">17</h2>
+            </div>
+          </div>
+        </div>
       </main>
 
       <!-- The footer contains copyright and contact info regarding the website -->
       <footer>
         &copy; Copyright 2099. All Rights Reserved.<br />
-        Request information<br />
-        Rohit Sai Pandugolla &nbsp;&nbsp; C0878560
         <a href="mailto:info@mahadev-enterprises.com"> Request Information </a>
+        Rohit Sai Pandugolla &nbsp;&nbsp; C0878560
         <!--Hyperlinks for social media handles can be added-->
       </footer>
     </div>
